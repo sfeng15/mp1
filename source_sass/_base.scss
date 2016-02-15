@@ -2,12 +2,333 @@
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 
-h1 {
-  font-size: 2.2rem;
-  color: lighten($orange, 25);
+//resizing
+//
+//
+header { position: fixed;  width: 100%; background-color: rgba(166, 159, 168, 1);}
+.large nav a {  transition: all 1s; height:44px; line-height:44px; padding: 0 20px;  font-size: 18px;}
+.small nav a {  transition: all 1s; height:28px; line-height:28px;padding: 0 10px;  font-size: 14px;}
+nav li {
+  float: right;/*fixed to the right*/
+  display: block;
+  background-color: green;
+  padding: 10px;
 }
 
-.test {
-  font-size: 1.2rem;
-  color: $blue;
+//body property
+//
+//
+
+#sectionA{
+  height:600px;
+  width: 100%;
+  margin:auto;
 }
+#sectionB{
+  margin:auto;
+  height:600px;
+  width: 100%;
+}
+#sectionC{
+  margin:0 auto;
+  text-align: center;
+  width: 100%;
+  height:1500px;
+}
+#d{
+  width: 100%;
+  height:1500px;
+}
+
+h1 {
+  width: 300px;
+  padding: 35px;
+  border: 10px;
+  margin: 0px;
+}
+body {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: auto;
+}
+section {
+  width:100%;
+  float:left;
+}
+footer {
+  background-color: #a69fa8;
+  color:white;
+  clear:both;
+  height: 30px;
+  width: 100%;
+  .fb-like{
+    position: absolute;  left:50%; text-align: center;
+  }
+
+}
+
+//carousel
+//
+////
+//#carousel_inner {
+//  float:left; /* important for inline positioning */
+//  width:310px; /* important (this width = width of list item(including margin) * items shown */
+//  overflow: hidden;  /* important (hide the items outside the div) */
+//}
+//
+//#carousel_ul {
+//  position:relative;
+//  left:-310px; /*important (this should be negative number of list items width(including margin)*/
+//  list-style-type: none; /* removing the default styling for unordered list items */
+//  margin: 0;
+//  width:1000px; /* important */
+//}
+//
+//#carousel_ul li{
+//  float: left; /* important for inline positioning of the list items */
+//  width:300px;  /* fixed width, important */
+//  /* just styling bellow*/
+//  height:300px;
+//  margin-top:10px;
+//  margin-bottom:10px;
+//  margin-left:5px;
+//  margin-right:5px;
+//}
+//
+//#carousel_ul li img {
+//  /* styling */
+//  height:300px;
+//  width:300px;
+//}
+//#left_scroll, #right_scroll{
+//  float:left;
+//  height:300px;
+//  width:15px;
+//}
+//#left_scroll img, #right_scroll img{
+//  /*styling*/
+//  cursor: pointer;
+//  cursor: hand;
+//  height:300px;
+//
+//}
+//creating multiple columns
+//
+//
+.newspaper {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+.content{
+  height: 300px;
+  margin: auto;
+}
+h2 {
+  -webkit-column-span: 1; /* Chrome, Safari, Opera */
+  column-span:1;
+  color: #1b8008;
+  font-size:large;
+  font-style: italic;
+}
+
+//modal
+//
+//
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: #00d9ff;
+}
+
+//flash
+//
+//
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  margin-top: 50px;
+  margin-left: auto;
+  width: 100%;
+  height: 200px;
+  animation-name: flash;
+  animation-duration: 5s;
+  animation-iteration-count: 100;
+  p {
+    width: 50px;
+    margin: auto;
+    color: #0000ff;
+    font-size: large;
+    font-style: italic;
+    padding:100px;
+  }
+}
+
+//#carousel_container{
+//
+//  position: relative;
+//  left:50%;
+//
+//}
+
+//vertical centered
+
+#d {
+  height: 500px;
+  width: 100%;
+  display: table;
+  background-color: rgba(113, 113, 113, 0.1);
+}
+.outer {
+  height: 200px;
+  background-color: rgba(138, 138, 138, 0.17);
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.inner {
+  height: 50%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  transform: translateX(-50px);
+  left:50%;
+}
+.fa .fa-reddit {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 50px;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: bottom;
+  margin:auto;
+}
+
+#story{
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+#carousel {
+  width:255px;
+  height:290px;
+  margin:0 auto;
+}
+#slides {
+  overflow:hidden;
+  /* fix ie overflow issue */
+  position:relative;
+  width:250px;
+  height:250px;
+  border:1px solid #ccc;
+}
+/* remove the list styles, width : item width * total items */
+#slides ul {
+  position:relative;
+  left:0;
+  top:0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  width:750px;
+}
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+  width:250px;
+  height:250px;
+  float:left;
+}
+#slides li img {
+  padding:5px;
+}
+/* Styling for prev and next buttons */
+#buttons {
+  padding:0 0 5px 0;
+  float:right;
+}
+#buttons a {
+  display:block;
+  width:31px;
+  height:32px;
+  text-indent:-999em;
+  float:left;
+  outline:0;
+}
+a#prev {
+  background: url("../media/arrow.gif") 0 -31px no-repeat;
+}
+a#prev:hover {
+  background:url("../media/arrow.gif") 0px 0px no-repeat;
+}
+a#next {
+  background:url("../media/arrow.gif") -32px -31px no-repeat;
+}
+a#next:hover {
+  background:url("../media/arrow.gif") -32px 0 no-repeat;
+}
+.clear {clear:both}

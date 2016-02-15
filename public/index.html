@@ -1,3 +1,4 @@
+<!--
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,14 +8,142 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
-  <div class="cat">
-    <img src="./media/cat.jpg" alt="Cat">
-  </div>
+
 
   <script src="lib/jquery-2.1.3.min/index.js"></script>
   <script src="js/script.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="./media/Dog.ico"/>
+    <link rel="bookmark" href="./media/Dog.ico"/>
+    <meta charset="UTF-8">
+    <title>MP1 </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<!--background image-->
+<body  background="./media/background2.jpg">
+
+<header>
+    <div class="large">
+        <nav >
+            <i class="fa fa-reddit" style="font-size:50px"></i>
+            <li id="tabA"><a href="#a">a</a></li>
+            <li id="tabB"><a href="#b">b</a></li>
+            <li id="tabC"><a href="#c">c</a></li>
+            <li id="tabD"><a href="#d">d</a></li>
+        </nav>
+    </div>
+</header>
+
+<section>
+<!--animation-->
+
+    <div class="flash">
+        <p>National Animals</p>
+    </div>
+
+    <div id="sectionA">
+        <h1 id="a" style=" margin:auto;text-align: center;padding: 50px"  >a</h1>
+        <video style="width:100% ;height:240px; margin:auto"  autoplay loop>
+            <source src="./media/panda.mp4" type="video/mp4" >
+            Your browser does not support the video tag.
+        </video>
+
+<!--modal-->
+        <!--<div id="x" style="width:100%">-->
+        <div style="width:100%;">
+            <a href="#openModal"  ><img src="./media/France.JPG" style="left:50%; position: relative;height:100px;width: 100px;  transform: translateX(-50px);"></a>
+        </div>
+
+        <div id="openModal" class="modalDialog">
+            <div>	<a href="#close" title="Close" class="close">X</a>
+                <p>France</p>
+                <img src="./media/France.JPG" style="height: 300px">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionB">
+        <h1 id="b" style="margin:auto;text-align: center;padding: 50px" >b</h1>
+<!--multicolumn-->
+        <div class="newspaper">
+            <div class="content">
+                <h2>US</h2>
+               <img src="./media/US.jpg" style="height: 200px;margin: auto">
+            </div>
+            <div class="content">
+                <h2>India</h2>
+                <img src="./media/India.jpg" style="height: 200px">
+            </div>
+            <div class="content">
+                <h2>Australia</h2>
+                <img src="./media/Australia.jpg" style="height: 200px">
+            </div>
+        </div>
+    </div>
+    <div id="sectionC">
+        <h1 id="c" style="margin:auto;text-align: center;padding: 50px">c</h1>
+        <!--carousel-->
+       <!-- <div id='carousel_container' style="position: absolute; width:100%; left:50%; transform: translateX(-100px); text-align: center;">
+       -->
+        <!--<div id='carousel_container'>-->
+        <!--<div id='left_scroll'><img src='./media/left.png' /></div>-->
+
+                <!--<div id='carousel_inner'>-->
+                    <!--<ul id='carousel_ul'>-->
+                        <!--<li><a href='#'><img src='./media/US.jpg' /></a></li>-->
+                        <!--<li><a href='#'><img src='./media/India.jpg' /></a></li>-->
+                        <!--<li><a href='#'><img src='./media/China.jpg' /></a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+
+            <!--<div id='right_scroll'><img src='./media/right.png' /></div>-->
+        <!--</div>-->
+        <div id="carousel">
+            <div id="buttons">
+                <a href="#" id="prev">prev</a>
+                <a href="#" id="next">next</a>
+                <div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+            <div id="slides">
+                <ul>
+                    <li><img src="./media/US.jpg" width="240" height="240" alt="Slide 1"/></li>
+                    <li><img src="./media/China.jpg" width="240" height="240" alt="Slide 2"/></li>
+                    <li><img src="./media/India.jpg" width="240" height="240" alt="Slide 3"/></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--vertical center-->
+    <h1 style="margin:auto;text-align: center;padding: 50px">d</h1>
+    <div id="d">
+        <div class="outer">
+            <img class="inner" src='./media/England.jpg'>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="fb-like"  data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+</footer>
+
+<script src="lib/jquery-2.1.3.min/index.js"></script>
+<script src="js/script.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
+
 </body>
 </html>
