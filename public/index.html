@@ -16,8 +16,6 @@
 </body>
 </html>
 -->
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +33,7 @@
 <header>
     <div class="large">
         <nav >
-            <i class="fa fa-reddit" style="font-size:50px"></i>
+            <i class="fa fa-reddit" id="f"></i>
             <li id="tabD"><a href="#a">End</a></li>
             <li id="tabC"><a href="#b">Gallery</a></li>
             <li id="tabB"><a href="#c">Details</a></li>
@@ -52,26 +50,21 @@
     </div>
 
     <div id="sectionA">
-        <h1 id="a" style=" margin:auto;text-align: center;padding: 50px">Introduction</h1>
-        <video style="width:100% ;height:240px; margin:auto"  autoplay loop>
+        <h1 id="a" class="section_width" >Introduction</h1>
+        <video  autoplay loop>
             <source src="./media/panda.mp4" type="video/mp4" >
             Your browser does not support the video tag.
         </video>
 
 <!--modal-->
-        <!--<div id="x" style="width:100%">-->
-        <div style="width:100%;">
-            <a href="#openModal"  ><img src="./media/France.JPG" style=" left:50%;
-                                        position: relative;
-                                        height:100px;
-                                        width: 100px;
-                                        transform: translateX(-50px);"></a>
-        </div>
+        <a href="#openModal"  >
+            <img id="original" src="./media/France.JPG" >
+        </a>
 
         <div id="openModal" class="modalDialog">
             <div>	<a href="#close" title="Close" class="close">X</a>
                 <p>France</p>
-                <img src="./media/France.JPG" style="height: 300px;width: 300px">
+                <img src="./media/France.JPG" id="new">
             </div>
         </div>
     </div>
@@ -79,40 +72,26 @@
 
     <div id="sectionB">
         <div class="small">
-        <h1 id="b" style="margin:auto;text-align: center;padding: 50px ;" >Details</h1>
-<!--multicolumn-->
-        <!--<div class="newspaper">
-            <div class="content">
-                <h2>US</h2>
-               <img src="./media/US.jpg" style="height: 200px;margin: auto">
-            </div>
-            <div class="content">
-                <h2>India</h2>
-                <img src="./media/India.jpg" style="height: 200px">
-            </div>
-            <div class="content">
-                <h2>Australia</h2>
-                <img src="./media/Australia.jpg" style="height: 200px">
-            </div>
-        </div>-->
+        <h1 id="b" class="section_width" >Details</h1>
+
 
         <div id="content_grey">
             <div class="content_grey_container_box">
-                <h4 style="color: #000000">Eagle</h4>
-                <p style="color: #000000"> The plumage of an adult bald eagle is evenly dark brown </p>
-                <img src="./media/US.jpg" style="height: 200px;margin: auto">
+                <h4 >Eagle</h4>
+                <p > The plumage of an adult bald eagle is evenly dark brown </p>
+                <img src="./media/US.jpg" >
             </div><!--close content_grey_container_box-->
 
             <div class="content_grey_container_box">
-                <h4 style="color: #000000">Tiger</h4>
-                <p style="color: #000000"> India is home to 70 percent of tigers in the world</p>
-                <img src="./media/India.jpg" style="height: 200px">
+                <h4 >Tiger</h4>
+                <p > India is home to 70 percent of tigers in the world</p>
+                <img src="./media/India.jpg" >
             </div><!--close content_grey_container_box-->
 
             <div class="content_grey_container_box">
-                <h4 style="color: #000000">Kangaroo</h4>
-                <p style="color: #000000"> The kangaroo is a marsupial from the family Macropodidae</p>
-                <img src="./media/Australia.jpg" style="height: 200px">
+                <h4 >Kangaroo</h4>
+                <p > The kangaroo is a marsupial from the family Macropodidae</p>
+                <img src="./media/Australia.jpg" >
             </div><!--close content_grey_container_box1-->
             <br style="clear:both"/>
         </div><!--close content_grey-->
@@ -127,7 +106,7 @@
         </div>
     </div>
     <div id="sectionC">
-        <h1 id="c" style="margin:auto;text-align: center;padding: 50px">Gallery</h1>
+        <h1 id="c" class="section_width">Gallery</h1>
         <!--carousel-->
        <!-- <div id='carousel_container' style="position: absolute; width:100%; left:50%; transform: translateX(-100px); text-align: center;">
        -->
@@ -163,16 +142,12 @@
         </div>
     </div>
     <!--vertical center-->
-    <h1 style="margin:auto;text-align: center;padding: 50px">End</h1>
+    <h1 class="section_width">End</h1>
     <div id="d">
         <div class="outer">
             <img class="inner" src='./media/England.jpg'>
         </div>
     </div>
-
-
-
-
 
 
 
