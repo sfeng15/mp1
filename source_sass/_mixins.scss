@@ -1,0 +1,14 @@
+@mixin height($h) {
+  -webkit-height: $h;
+  -moz-height: $h;
+  -ms-height: $h;
+  height: $h;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+//.small { @include height(600px); }
+//.big { @include height(1500px); }

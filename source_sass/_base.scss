@@ -6,8 +6,8 @@
 //
 //
 header { position: fixed;  width: 100%; background-color: rgba(166, 159, 168, 1);}
-.large nav a {  transition: all 1s; height:44px; line-height:44px; padding: 0 20px;  font-size: 18px;}
-.small nav a {  transition: all 1s; height:28px; line-height:28px;padding: 0 10px;  font-size: 14px;}
+.large nav a {  transition: all 1s; height:44px; line-height:44px; padding: 0 20px;  font-size: 18px;text-decoration: none}
+.small nav a {  transition: all 1s; height:28px; line-height:28px;padding: 0 10px;  font-size: 14px;text-decoration: none}
 nav li {
   float: right;/*fixed to the right*/
   display: block;
@@ -21,30 +21,40 @@ nav li {
 
 #sectionA{
   height:600px;
-  width: 100%;
+ /* .small { @include height(600px); }
+ */ width: 100%;
   margin:auto;
+  background-color: rgba(33, 255, 28, 0.14);
+
 }
 #sectionB{
   margin:auto;
-  height:600px;
+  //height:600px;
+  .small { @include height(600px); }
   width: 100%;
+  background-color: rgba(128, 128, 128, 0.1);
+
 }
 #sectionC{
   margin:0 auto;
   text-align: center;
   width: 100%;
-  height:1500px;
+  height:600px;
+  background-color: rgba(14, 255, 248, 0.12);
 }
 #d{
   width: 100%;
   height:1500px;
+  /*.big { @include height(1500px); }*/
 }
 
 h1 {
   width: 300px;
   padding: 35px;
   border: 10px;
-  margin: 0px;
+  margin: auto;
+  text-align: center;
+  color: $color;
 }
 body {
   background-size: 100% 100%;
@@ -62,8 +72,9 @@ footer {
   clear:both;
   height: 30px;
   width: 100%;
+  text-align: center;
   .fb-like{
-    position: absolute;  left:50%; text-align: center;
+    position: absolute;  left:50%; text-align: center;transform: translateX(-100px);
   }
 
 }
@@ -120,6 +131,9 @@ footer {
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
   column-count: 3;
+  -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+  -moz-column-rule-color: lightblue; /* Firefox */
+  column-rule-color: #2042e6;
 }
 .content{
   height: 300px;
@@ -320,15 +334,88 @@ h2 {
   outline:0;
 }
 a#prev {
-  background: url("../media/arrow.gif") 0 -31px no-repeat;
+  background: url("../media/arrow.png") 0 -31px no-repeat;
 }
 a#prev:hover {
-  background:url("../media/arrow.gif") 0px 0px no-repeat;
+  background:url("../media/arrow.png") 0px 0px no-repeat;
 }
 a#next {
-  background:url("../media/arrow.gif") -32px -31px no-repeat;
+  background:url("../media/arrow.png") -32px -31px no-repeat;
 }
 a#next:hover {
-  background:url("../media/arrow.gif") -32px 0 no-repeat;
+  background:url("../media/arrow.png") -32px 0 no-repeat;
 }
 .clear {clear:both}
+
+
+
+
+
+#content
+{ width: 100%;
+  margin-bottom: 20px;
+  float: left;}
+
+//.content_item
+//{ width: 100%;
+//  margin-top: 20px;
+//  margin-bottom: 20px;}
+//
+//
+//
+//.content_container
+//{ width: 100%;
+//  padding: 5px;
+//  margin-right: 10px;
+//  float: left;}
+
+
+.content_image
+{ float: left;
+  width: 100%;
+  height: 80px;
+  margin: 0 20px 10px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;}
+
+#content_grey
+{ width: 1500px;
+  height: 400px;
+  text-align: center;
+  margin: auto;
+  background: transparent url("../media/menu_pattern.jpg") repeat;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;}
+
+#content_grey p
+{ color: #000000;}
+
+#content_grey h4
+{ text-shadow: none;}
+
+#content_grey img
+{ @include border-radius(50px);
+}
+
+.content_grey_container_box
+{ width: 400px;
+  height: 100px;
+  padding: 5px;
+  text-align: center;
+  margin: 20px 0 10px 10px;
+  display:inline-block;
+
+}
+
+
+.classtd{ display: table; padding:10px;border:1px solid #ccc;   margin:auto;}
+.classtd div{ display: inline-block; vertical-align: middle;display: table-cell;}
+
+
+
+

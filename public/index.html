@@ -36,10 +36,10 @@
     <div class="large">
         <nav >
             <i class="fa fa-reddit" style="font-size:50px"></i>
-            <li id="tabA"><a href="#a">a</a></li>
-            <li id="tabB"><a href="#b">b</a></li>
-            <li id="tabC"><a href="#c">c</a></li>
-            <li id="tabD"><a href="#d">d</a></li>
+            <li id="tabD"><a href="#a">End</a></li>
+            <li id="tabC"><a href="#b">Gallery</a></li>
+            <li id="tabB"><a href="#c">Details</a></li>
+            <li id="tabA"><a href="#d">Introduction</a></li>
         </nav>
     </div>
 </header>
@@ -52,7 +52,7 @@
     </div>
 
     <div id="sectionA">
-        <h1 id="a" style=" margin:auto;text-align: center;padding: 50px"  >a</h1>
+        <h1 id="a" style=" margin:auto;text-align: center;padding: 50px">Introduction</h1>
         <video style="width:100% ;height:240px; margin:auto"  autoplay loop>
             <source src="./media/panda.mp4" type="video/mp4" >
             Your browser does not support the video tag.
@@ -61,22 +61,27 @@
 <!--modal-->
         <!--<div id="x" style="width:100%">-->
         <div style="width:100%;">
-            <a href="#openModal"  ><img src="./media/France.JPG" style="left:50%; position: relative;height:100px;width: 100px;  transform: translateX(-50px);"></a>
+            <a href="#openModal"  ><img src="./media/France.JPG" style=" left:50%;
+                                        position: relative;
+                                        height:100px;
+                                        width: 100px;
+                                        transform: translateX(-50px);"></a>
         </div>
 
         <div id="openModal" class="modalDialog">
             <div>	<a href="#close" title="Close" class="close">X</a>
                 <p>France</p>
-                <img src="./media/France.JPG" style="height: 300px">
+                <img src="./media/France.JPG" style="height: 300px;width: 300px">
             </div>
         </div>
     </div>
 
 
     <div id="sectionB">
-        <h1 id="b" style="margin:auto;text-align: center;padding: 50px" >b</h1>
+        <div class="small">
+        <h1 id="b" style="margin:auto;text-align: center;padding: 50px ;" >Details</h1>
 <!--multicolumn-->
-        <div class="newspaper">
+        <!--<div class="newspaper">
             <div class="content">
                 <h2>US</h2>
                <img src="./media/US.jpg" style="height: 200px;margin: auto">
@@ -89,10 +94,40 @@
                 <h2>Australia</h2>
                 <img src="./media/Australia.jpg" style="height: 200px">
             </div>
+        </div>-->
+
+        <div id="content_grey">
+            <div class="content_grey_container_box">
+                <h4 style="color: #ffffff">Eagle</h4>
+                <p style="color: #ffffff"> The plumage of an adult bald eagle is evenly dark brown </p>
+                <img src="./media/US.jpg" style="height: 200px;margin: auto">
+            </div><!--close content_grey_container_box-->
+
+            <div class="content_grey_container_box">
+                <h4 style="color: #ffffff">Tiger</h4>
+                <p style="color: #ffffff"> India is home to 70 percent of tigers in the world</p>
+                <img src="./media/India.jpg" style="height: 200px">
+            </div><!--close content_grey_container_box-->
+
+            <div class="content_grey_container_box">
+                <h4 style="color: #ffffff">Kangaroo</h4>
+                <p style="color: #ffffff"> The kangaroo is a marsupial from the family Macropodidae</p>
+                <img src="./media/Australia.jpg" style="height: 200px">
+            </div><!--close content_grey_container_box1-->
+            <br style="clear:both"/>
+        </div><!--close content_grey-->
+
+
+        <!--<div class="classtd">
+            <div style="padding:10px; background: #639146; color:#fff;">div+css</div>
+            <div style="padding:10px ; background: #2B82EE; color:#fff;">javascript</div>
+            <div style="padding:10px ; background: #F57900; color:#fff;">HTML5</div>
+            <div style="padding:10px ; background: #BC1D49; color:#fff;">CSS3</div>
+        </div>-->
         </div>
     </div>
     <div id="sectionC">
-        <h1 id="c" style="margin:auto;text-align: center;padding: 50px">c</h1>
+        <h1 id="c" style="margin:auto;text-align: center;padding: 50px">Gallery</h1>
         <!--carousel-->
        <!-- <div id='carousel_container' style="position: absolute; width:100%; left:50%; transform: translateX(-100px); text-align: center;">
        -->
@@ -128,17 +163,26 @@
         </div>
     </div>
     <!--vertical center-->
-    <h1 style="margin:auto;text-align: center;padding: 50px">d</h1>
+    <h1 style="margin:auto;text-align: center;padding: 50px">End</h1>
     <div id="d">
         <div class="outer">
             <img class="inner" src='./media/England.jpg'>
         </div>
     </div>
 
+
+
+
+
+
+
 </section>
 
 <footer>
-    <div class="fb-like"  data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    <div>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    </div>
+
 </footer>
 
 <script src="lib/jquery-2.1.3.min/index.js"></script>

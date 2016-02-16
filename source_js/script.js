@@ -92,13 +92,13 @@ function postionIndicator() {
         document.getElementById("tabC").style.backgroundColor ="green";
         document.getElementById("tabD").style.backgroundColor ="green";
     }
-    else if(document.body.scrollTop >=1400&& document.body.scrollTop < 2000){
+    else if(document.body.scrollTop >=1400&& document.body.scrollTop < 1600){
         document.getElementById("tabA").style.backgroundColor = "green";
         document.getElementById("tabB").style.backgroundColor ="green";
         document.getElementById("tabC").style.backgroundColor ="#0EFF6E";
         document.getElementById("tabD").style.backgroundColor ="green";
     }
-    else if (document.body.scrollTop>=2000){
+    else if (document.body.scrollTop>=1600){
         document.getElementById("tabA").style.backgroundColor = "green";
         document.getElementById("tabB").style.backgroundColor ="green";
         document.getElementById("tabC").style.backgroundColor ="green";
