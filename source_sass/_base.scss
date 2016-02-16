@@ -353,16 +353,16 @@ footer {
   outline:0;
 }
 a#prev {
-  background: url("../media/arrow.gif") 0 -31px no-repeat;
+  background: url("../public/media/arrow.gif") 0 -31px no-repeat;
 }
 a#prev:hover {
-  background:url("../media/arrow.gif") 0px 0px no-repeat;
+  background:url("../public/media/arrow.gif") 0px 0px no-repeat;
 }
 a#next {
-  background:url("../media/arrow.gif") -32px -31px no-repeat;
+  background:url("../public/media/arrow.gif") -32px -31px no-repeat;
 }
 a#next:hover {
-  background:url("../media/arrow.gif") -32px 0 no-repeat;
+  background:url("../public/media/arrow.gif") -32px 0 no-repeat;
 }
 .clear {clear:both}
 
@@ -391,7 +391,7 @@ a#next:hover {
   height: 400px;
   text-align: center;
   margin: auto;
-  background: transparent url("../media/menu_pattern.jpg") repeat;
+  background: transparent url("../public/media/menu_pattern.jpg") repeat;
 
   @include border-radius(15px);
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
