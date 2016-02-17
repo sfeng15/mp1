@@ -87,9 +87,12 @@ footer {
   clear:both;
   height: 30px;
   width: 100%;
-  text-align: center;
 }
-
+#face{
+  position: relative;
+  transform: translateX(-50px);
+  left:50%;
+}
 //carousel
 //
 ////
